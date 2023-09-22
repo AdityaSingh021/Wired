@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#011216"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="40dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-30sp"
+        app:lottie_rawRes="@raw/animationwired"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true" />
+    <com.nitish.typewriterview.TypeWriterView
+        android:layout_marginHorizontal="10dp"
+        android:fontFamily="@font/bitter"
+        android:layout_marginTop="-50dp"
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lottieAnimationView"
+        android:padding="10dp"
+        android:text="Engage in spontaneous conversations with like-minded individuals using our Random Chat feature. Connect with others who share your interests while ensuring your personal information remains confidential – only your username is visible to maintain your privacy."
+        android:textColor="#90FFFFFF"
+        android:textSize="16dp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/Stop"
+        android:layout_marginBottom="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue_rect"
+        android:text="Stop"
+        android:paddingHorizontal="40sp"
+        android:paddingVertical="10sp"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

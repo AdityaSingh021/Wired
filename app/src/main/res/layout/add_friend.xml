@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent"
+ android:background="#011216"
+    android:orientation="vertical"
+ android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/RelativeLayout"
+        android:layout_marginTop="20sp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="20dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/semi_circle">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:id="@+id/search"
+            android:layout_marginStart="15dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/ic_baseline_search_24"/>
+
+        <EditText
+            android:maxLines="1"
+            android:layout_marginHorizontal="5sp"
+            android:id="@+id/searchUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/transparent"
+            android:fontFamily="@font/open_sans"
+            android:hint="Search User Name"
+            android:textColorHint="@color/white"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/sendRequest"
+        android:paddingHorizontal="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bottom_nax_circle"
+        android:gravity="center"
+        android:paddingVertical="10sp"
+        android:layout_gravity="center"
+        android:text="Send Request"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textColorHint="#CDF1FB" />
+    <TextView
+        android:layout_marginBottom="20sp"
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:layout_gravity="center"
+        android:textColor="@color/white"/>
+
+
+</LinearLayout>

@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blank_frag_bg_image"
+    tools:context=".ProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:scrollbarSize="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_below="@+id/profile_image"
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/Name"
+                        android:gravity="center"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="IamIronMan"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:layout_marginTop="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginHorizontal="15sp"
+                        android:text="Fine-tune your experience with personalized settings. Customize your preferences to make the app work just the way you want it."
+                        android:textSize="14dp"
+                        android:textStyle="normal"
+                        android:textColor="#90FFFFFF"/>
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/profile_image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="40dp"
+                    android:src="@drawable/default_user" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/AccountSetting"
+                android:layout_marginTop="10sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/AccountSettings"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/profile"
+                    android:layout_marginStart="20dp"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/AccountSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Personal details"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Edit personal details"
+                        android:textSize="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#90FFFFFF"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/PrivacyPolicyLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:rotation="270"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/PrivacyPolicy"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/baseline_key_24"
+                    android:layout_marginStart="20dp"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/PrivacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Privacy policy"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Read the privacy Policy"
+                        android:textSize="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#90FFFFFF"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/NotificationsLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/Notifications"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/notification"
+                    android:layout_marginStart="20dp"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/Notifications"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Notifications"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Manage Notifications"
+                        android:textSize="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#90FFFFFF"/>
+                </LinearLayout>
+
+                <Switch
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20sp"
+                    android:id="@+id/switchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/DeleteAccountLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <ImageView
+                    android:id="@+id/DeleteAcc"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="20dp"
+                    android:src="@drawable/baseline_delete_24" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/DeleteAcc"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Delete account"
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:text="Delete this account"
+                        android:textColor="#90FFFFFF"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/LogOutLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/LogOut"
+                    android:layout_width="20sp"
+                    android:layout_height="20sp"
+                    android:src="@drawable/baseline_logout_24"
+                    android:layout_marginStart="20dp"/>
+
+                <LinearLayout
+                    android:layout_toRightOf="@+id/LogOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="LogOut"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:textColor="@color/white"/>
+
+                    <TextView
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/open_sans"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="LogOut from this account"
+                        android:textSize="15dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="#90FFFFFF"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+
+</FrameLayout>
